@@ -2,8 +2,8 @@
 ### Java template
 # Compiled class file
 *.class
-/.idea
-/.idea/*
+.idea
+.idea/*
 
 # Log file
 *.log
