@@ -1,23 +1,18 @@
 package com.hwh.web;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
-/**
- * @author HwH
- * @date 2021/8/28 0:25
- * @description
- */
+
 @SpringBootApplication(scanBasePackages =
-        {
-                "com.hwh.framework",
-                "com.hwh.api",
-                "com.hwh.common"
+        {   "com.hwh.framework",
+            "com.hwh.api"
         })
-//@MapperScan(basePackages = "com.lce.**.mapper")
+@MapperScan(basePackages = "com.hwh.**.mapper")
 //@EnableTransactionManagement
 @EnableScheduling
 @Configuration

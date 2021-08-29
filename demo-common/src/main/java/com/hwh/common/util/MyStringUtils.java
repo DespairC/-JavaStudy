@@ -14,7 +14,7 @@ public class MyStringUtils {
      * 判断为空
      * */
     public static boolean isEmpty(@Nullable Object str){
-        return str != null;
+        return str == null;
     }
 
     /**
